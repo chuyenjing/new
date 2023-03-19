@@ -45,7 +45,7 @@ button {
     margin: 4px 2px;
     transition-duration: 0.4s;
     cursor: pointer;
-    position: relative;top:340px;left: 150px;
+    position: relative;top:180px;left: 150px;
 }
 
 .button1 {
@@ -60,7 +60,7 @@ button {
     color: white;
 }
 #timer{
-    position: fixed;top:270px;left: 370px;
+    position: fixed;top:260px;left: 370px;
 }
 .animation{
     animation-name:change-color ;
