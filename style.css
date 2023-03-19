@@ -1,0 +1,68 @@
+@keyframes change-color {
+    from{background-color: rgba(255,177,60,0.5)}
+    to{background-color: rgba(255,99,71,0.8)}
+}
+body {
+    font-size: 16px;
+    line-height: 1.5;
+}
+.box{
+    color: black;
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    z-index: -999;
+    min-height: 100%;
+    width: 100%;
+
+}
+img{
+    float: left;
+    position: relative;top:120px;left: 80px;
+    width: 15%;height: auto;
+}
+
+
+h1{
+    position: relative;top:90px;left: 150px;
+    padding-left: 0;
+    margin-left: 0;
+}
+h2{
+    position: relative;top:110px;left: 150px;
+}
+button {
+    background-color: rgba(60,60,60);
+    border: none;
+    color: white;
+    padding: 16px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    position: relative;top:180px;left: 150px;
+}
+
+.button1 {
+    background-color: white;
+    color: black;
+    border: 2px solid rgba(60,60,60);
+}
+
+.button1:hover {
+    background-color: rgba(60,60,60);
+    color: white;
+}
+#timer{
+    position: fixed;top:260px;left: 370px;
+}
+.animation{
+    animation-name:change-color ;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+}
