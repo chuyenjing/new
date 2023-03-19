@@ -8,6 +8,18 @@ images[1] = "sticker.png";
 
 setTimeout("changeImage()", 2000);
 var timeoutId = null;
+function start(){
+    var timer = document.querySelector("#timer");
+    var number = 20;
+    setInterval(function(){
+        number -- ;
+        if(number <= 0 ){
+            number = 0;
+            location.href='https://www.youtube.com/';
+        }
+        timer.innerText = number + 0 }, 1000);
+
+}
 
 function typeWriter() {
     if (i < txt.length) {
@@ -23,19 +35,8 @@ function changeImage(x) {
         changeImage((x + 1) % images.length);
     }, 2000);
 }
-function start(){
-    var timer = document.querySelector("#timer");
-    var number = 20;
-    setInterval(function(){
-        number -- ;
-        if(number <= 0 ){
-            number = 0;
-            location.href='https://www.youtube.com/';
-        }
-        timer.innerText = number + 0 }, 1000);
 
-}
-
+start();
 typeWriter();
 changeImage(0);
-start();
+
