@@ -2,25 +2,23 @@ var i = 0;
 var txt = '抱歉 當機處理中' +'\n'+
     'sorry! we are solving problem...';
 var speed = 200;
-var images = [
-    "main.png",
-    "sticker.png"
-];
+var images = new Array();
+images[0] = "main.png";
+images[1] = "sticker.png";
 
-setTimeout(changeImage, 2000);
+setTimeout("changeImage()", 2000);
 var timeoutId = null;
-
-function start() {
+function start(){
     var timer = document.querySelector("#timer");
     var number = 20;
-    var intervalId = setInterval(function() {
-        number--;
-        if (number <= 0) {
-            clearInterval(intervalId);
+    setInterval(function(){
+        number -- ;
+        if(number <= 0 ){
+            number = 0;
             location.href='https://www.youtube.com/';
         }
-        timer.innerText = number + 0;
-    }, 1000);
+        timer.innerText = number + 0 }, 1000);
+
 }
 
 function typeWriter() {
@@ -41,3 +39,4 @@ function changeImage(x) {
 start();
 typeWriter();
 changeImage(0);
+
